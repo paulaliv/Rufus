@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voiceflow Assistant</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href =" https://github.com/Born2Root/Fast-Font.git"> 
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+ 
+</head>
+<body>
+    <div class="menuwrapper">
+        <button class="openbtn" onclick="openNav()">☰</button> 
+        <h1> Rufus</h1>                         
+    </div>
+    <div id="mySidebar" class="sidebar">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <label class="md_switch">
+        Dyslexia
+        <input type="checkbox" id="Dyslexia" />
+        <span class="md_switch__toggle"></span>
+        </label>
+         <label class="md_switch">
+        ADHD
+        <input type="checkbox" id="ADHD" />
+        <span class="md_switch__toggle"></span>
+        </label>
+        <label class="md_switch">
+         Autism
+        <input type="checkbox" id="Autism" />
+        <span class="md_switch__toggle"></span>
+        </label>
+        <h3> All features</h3>
+        <div id="dyslexiaFeatures">
+             <label class="md_switch">
+            line spacing
+            <input type="checkbox" id="linespacing" />
+            <span class="md_switch__toggle"></span>
+            </label>
+            <label class="md_switch">
+            letter spacing
+            <input type="checkbox" id= "charspacing" />
+            <span class="md_switch__toggle"></span>
+            </label>
+            <label class="md_switch">
+            voice response
+            <input type="checkbox" id= "voiceresponse"/>
+            <span class="md_switch__toggle"></span>
+            </label>
+            <label class="md_switch">
+            text-to-speech
+            <input type="checkbox" id= "texttospeech"/>
+            <span class="md_switch__toggle"></span>
+            </label>
+            <label class="md_switch">
+            change font
+            <input type="checkbox" id= "change_font" />
+            <span class="md_switch__toggle"></span>
+            </label>
+        </div>
+        <div id="adhdFeatures">
+            <label class="md_switch">
+            typewriter
+            <input type="checkbox" id= "typewriter"/>
+            <span class="md_switch__toggle"></span>
+            </label>
+            <label class="md_switch">
+            bionic reading
+            <input type="checkbox" id= "bionic" />
+            <span class="md_switch__toggle"></span>
+            </label>
+            <label class="md_switch">
+            highlighter tool
+            <input type="checkbox" id= "highlighter" />
+            <span class="md_switch__toggle"></span>
+            </label>
+        </div>
+        <div id="autismFeatures">
+             <label class="md_switch">
+            bullet points
+            <input type="checkbox" id= "bulletpoints"/>
+            <span class="md_switch__toggle"></span>
+            </label>
+        </div>
+    </div>
+    <div id="main">
+        <div id="output">
+            <div id="response-container"></div>
+            <div id="buttons"></div>
+        </div>
+        <div id="input">
+            <div id="column_middle">
+                <div id="input-container">
+                <input id="user-input" type="text">
+                </div>
+            </div>   
+            <div id= "column_right">
+            <ul style="list-style-type:none;">
+                <li><button id= "voice-button"> 💬 </button> </li>
+                <li><button class="openspeed" onclick="openSpeed()">x</button> </li>
+            </ul>
+            <div id="mySpeedmenu" class="speedbar">
+            <button class="material-icons" id= "slower">fast_rewind</button>
+            <button class="material-icons" id= "pause">pause_circle_filled</button>
+            <button class="material-icons" id= "faster">fast_forward</button>
+            </div>
+            
+            
+
+            </div>
+
+    </div>
+</div>
+<script src="adhd.js" id="vfassistant"></script>
+</body>
+
+</html>
